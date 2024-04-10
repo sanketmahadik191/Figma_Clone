@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "@liveblocks/react-comments/styles.css";
+
+* {
+  font-family: 'Work Sans', sans-serif;
+}
+
+@layer utilities {
+  .no-ring {
+    outline: none !important;
+    ring-offset: 0 !important;
+    focus: ring-offset-0 !important;
+    focus-visible: ring-offset-0 !important;
+  }
+
+  .input-ring {
+    height: 2rem;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    ring-offset: 0;
+    focus: ring-1;
+    focus: ring-primary-green;
+    focus: ring-offset-0;
+    focus-visible: ring-offset-0;
+  }
+
+  .right-menu-content {
+    display: flex;
+    width: 20rem;
+    flex-direction: column;
+    gap: 0.25rem;
+    border: none;
+    background-color: #111827;
+    padding-top: 1rem;
+    color: white;
+  }
+
+  .right-menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+  }
+
+  .right-menu-item:hover {
+    background-color: #f3f4f6;
+  }
+}
