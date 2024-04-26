@@ -26,3 +26,4 @@ export function Avatar({ name, otherStyles }: { otherStyles: string; name: strin
         </div>
     );
 }
+

@@ -7,6 +7,8 @@ type Props = {
   value: string;
 };
 
+//reaction emojis 
+
 const FlyingReaction = ({ x, y, timestamp, value }: Props) => (
   <div
     className={`pointer-events-none absolute select-none ${styles.disappear} text-${

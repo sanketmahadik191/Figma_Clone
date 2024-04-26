@@ -43,7 +43,7 @@ const RightSidebar = ({ elementAttributes, setElementAttributes, fabricRef, acti
                     <GrClose />
                     </button>
                     </div>
-                    <span className='text-xs text-primary-grey-300 mt-3 px-5 border-b border-primary-grey-200 pb-4'>Make Changes to canvas as you like</span>\
+                    <span className='text-xs text-primary-grey-300 mt-3 px-5 border-b border-primary-grey-200 pb-4'>Make Changes to canvas as you like</span>
                     <Text
                         fontFamily={elementAttributes.fontFamily}
                         fontSize={elementAttributes.fontSize}
@@ -77,7 +77,7 @@ const RightSidebar = ({ elementAttributes, setElementAttributes, fabricRef, acti
             </section>
             {!sidebarVisible && (
                 <button onClick={toggleSidebar} className="right-sidebar sticky right-0 top-10">
-                    <FaChevronCircleLeft className='w-10 h-10 bg-white rounded-full border-0'/>
+                    <FaChevronCircleLeft className='w-10 h-10 bg-white rounded-full border-2'/>
                 </button>
             )}
         </React.Fragment>

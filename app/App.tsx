@@ -18,10 +18,16 @@ export default function Page() {
 
     const undo = useUndo();
     const redo = useRedo();
-
+    
+    // initials fabricref to use
     const canvasRef = useRef<HTMLCanvasElement>(null);
+
+    //fabric ref allows to us to perform action on canvas
     const fabricRef = useRef<fabric.Canvas | null>(null);
+
+    // varibles gives us user is drawing or not
     const isDrawing = useRef(false);
+
     const shapeRef = useRef<fabric.Object | null>(null);
     const selectedShapeRef = useRef<string | null>(null);
 
@@ -114,6 +120,7 @@ export default function Page() {
     useEffect(() => {
         const canvas = initializeFabric({ canvasRef, fabricRef });
 
+        //to handle mouse events
         canvas.on("mouse:down", (options: any) => {
             handleCanvasMouseDown({
                 options,

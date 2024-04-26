@@ -9,6 +9,8 @@ const ActiveUsers = () => {
     const currentUser = useSelf();
     const hasMoreUsers = users.length > 3;
 
+    //useMemo hook remeber the user info , its prevent get new user util we reload or open new host
+
     const memoizedUsers = useMemo(() => {
         return (
             <div className="flex items-center justify-center gap-1 py-2">

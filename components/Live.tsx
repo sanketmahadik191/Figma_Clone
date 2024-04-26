@@ -36,7 +36,7 @@ const Live = ({ canvasRef, undo, redo }: Props) => {
 
     useInterval(() => {
 
-        setReaction((reactions) => reactions.filter((reaction) => reaction.timestamp > Date.now() - 4000));
+        setReaction((reactions) => reactions.filter((reaction) => reaction.timestamp > Date.now() - 3000));
     }, 1000)
 
     useInterval(() => {
